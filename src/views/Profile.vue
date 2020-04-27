@@ -43,7 +43,7 @@
                                 <div class="card-profile-actions py-4 mt-lg-0">
 
                                     <!-- <base-dropdown> -->
-                                        <base-button slot="title" type="primary" class="mr-3 dropdown-toggle"
+                                        <base-button slot="title" type="warning" class="mr-3 dropdown-toggle"
                                         onClick="alert('Anand will enable this soon. Please visit later')">
                                           About
                                         </base-button>
@@ -56,7 +56,7 @@
                                         <router-link to="/resume" class="dropdown-item">Resume</router-link>
 
                                     </base-dropdown> -->
-                                    <base-button type="secondary" class="float-right"><a href="mailto:saianand0427@gmail.com"  target="_blank">Message</a></base-button>
+                                    <a href="mailto:saianand0427@gmail.com"  target="_blank"><base-button type="secondary" textColor = "warning" class="float-right">Message</base-button></a>
                                 </div>
                             </div>
                             <div class="col-lg-4 order-lg-1">
@@ -101,7 +101,8 @@
                                 <div class="col-lg-9">
                                     <p>Machine Learning and AI are my primary interests. I aspire to be an all-around scientist in multiple disciplines and I work hard for this goal. I want to build interesting and intelligent systems that can help all kinds of life forms in our world.</p>
                                     <div>
-                                    <a href="#" @click="toggleClicked">Show more</a></div>
+                                    <a href="#" @click="toggleClicked"><base-button type="secondary" textColor = "warning">Show more</base-button></a>
+                                    </div>
                                     <div class="alert alert-warning"     role="alert" v-if="isClicked"  >
                                       I will put some more content soon so come back then :)
                                     </div>
